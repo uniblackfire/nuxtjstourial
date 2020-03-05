@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>首页</h1>
-    <h2>标题1</h2>
+    <nuxt-link to="/about">
+      About
+    </nuxt-link>
     <div>
       <div
         v-for="post in postList"
