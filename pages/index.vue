@@ -1,15 +1,17 @@
 <template>
-  <div>
-    <h1>首页</h1>
-    <nuxt-link to="/about">
-      About
-    </nuxt-link>
-    <div>
-      <div
-        v-for="post in postList"
-        :key="post.id"
-      >
-        {{ post.title }}
+  <div class="container">
+    <div class="box">
+      <h1>首页</h1>
+      <nuxt-link to="/about">
+        About
+      </nuxt-link>
+      <div>
+        <div
+          v-for="post in postList"
+          :key="post.id"
+        >
+          {{ post.title }}
+        </div>
       </div>
     </div>
   </div>

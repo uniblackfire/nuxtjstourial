@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>_dynamicnested param: {{ dynamicNestedName }}</h1>
-    <nuxt-child/>
+    <nuxt-child />
   </div>
 </template>
 
