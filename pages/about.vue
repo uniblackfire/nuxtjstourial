@@ -1,6 +1,9 @@
 <template>
   <div>
     about
+    <nuxt-link to="/">
+      回首页
+    </nuxt-link>
   </div>
 </template>
 
