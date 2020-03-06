@@ -7,6 +7,9 @@ const app = express()
 const config = require('../nuxt.config.js')
 config.dev = process.env.NODE_ENV !== 'production'
 
+// 引用路由文件
+const postRouter = require('./routes/post')
+
 async function start () {
   // Init Nuxt.js
   const nuxt = new Nuxt(config)
@@ -19,6 +22,9 @@ async function start () {
     const builder = new Builder(nuxt)
     await builder.build()
   }
+
+  // 加载自定义路由
+  app.use('/api/post', postRouter)
 
   // Give nuxt middleware to express
   app.use(nuxt.render)

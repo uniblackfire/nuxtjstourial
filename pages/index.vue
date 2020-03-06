@@ -21,10 +21,10 @@
 <script>
 export default {
   async asyncData ({ $http }) {
-    const url = 'http://jsonplaceholder.typicode.com/posts'
+    const url = 'api/post/list'
     const response = await $http.$get(url)
     return {
-      postList: response
+      postList: response.result
     }
   }
 }

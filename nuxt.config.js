@@ -45,6 +45,9 @@ module.exports = {
     '@nuxtjs/dotenv',
     '@nuxt/http'
   ],
+  http: {
+    browserBaseURL: '/'
+  },
   /*
   ** Build configuration
   */
