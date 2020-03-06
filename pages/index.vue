@@ -5,6 +5,7 @@
       <nuxt-link to="/about">
         About
       </nuxt-link>
+      <b-button>测试按钮</b-button>
       <div>
         <div
           v-for="post in postList"
